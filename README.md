@@ -45,8 +45,8 @@ The __Manhattan-distance__ heuristic is mandatory, the other two are up to you.
 ### Language constraints  
 
 	You are free to use whatever language you want, but keep in mind that some  
-languages are more time and space-efficient than others, so your choice in languagaes  
-may influence the performances of your program.  
+	languages are more time and space-efficient than others, so your choice in languagaes  
+	may influence the performances of your program.  
 
 ### Author  
 
