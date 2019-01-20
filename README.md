@@ -1,2 +1,5 @@
-# n-puzzle
-This repository will contain the program to solve N-puzzle
+# N-Puzzle
+
+This program will contain the n-puzzle solution
+
+### 
