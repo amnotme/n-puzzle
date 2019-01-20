@@ -1,21 +1,21 @@
 # N-Puzzle
 
-###  The project 
-	The goal of this project is to solve the N-puzzle game using the A (star)   
+###  The project  
+The goal of this project is to solve the N-puzzle game using the A (star)   
 search algorithm or one of its variants  
 
-	You start with board of N x N cells.  One of these cells is empty, the others  
+You start with board of N x N cells.  One of these cells is empty, the others  
 will contain numbers from 1 to ((N x N) - 1) and that are of unique distance  
 in the puzzle.  
 
-	The search algorithm will find valid sequence of moves in order to reach  
+The search algorithm will find valid sequence of moves in order to reach  
 the final state in a "snail solution" fashion.
 
-	The solving algorithm time constraint will be that of a reasonable  
+The solving algorithm time constraint will be that of a reasonable  
 performance:  Taking a few seconds to solve a 3-puzzle is pusshing it,  
 ten seconds is unacceptable.  
 
-	The only move you can do in an N-puzzle is to swap the empty cell with one  
+The only move you can do in an N-puzzle is to swap the empty cell with one  
 of its neighbors excluding cells diagonally placed.  Imagine you're sliding  
 a block with a number on it.  
 
@@ -25,11 +25,11 @@ a block with a number on it.
 
 ### Things to do  
 
-	The end goal is to implement the A\* search algorithm (or one of its variants)  
+The end goal is to implement the A\* search algorithm (or one of its variants)  
 to solve an N-puzzle, with the following constraints:  
 
 - [ ] You have to manage different puzzle sizes (3,4,5,17,etc...).  The higher  
-higher your program can manage, the better.  :+1.  
+your program can manage, the better.  :+1  
 - [ ] You have to manage both randomly determined states (of your own generation)
 , or input files that specify a starting board.  
 - [ ] The cost associated with each transition is always 1.  
