@@ -1,21 +1,22 @@
 # N-Puzzle
 
 ###  The project  
-The goal of this project is to solve the N-puzzle game using the A (star)   
+  
+  The goal of this project is to solve the N-puzzle game using the A (star)   
 search algorithm or one of its variants  
 
-You start with board of N x N cells.  One of these cells is empty, the others  
+  You start with board of N x N cells.  One of these cells is empty, the others  
 will contain numbers from 1 to ((N x N) - 1) and that are of unique distance  
 in the puzzle.  
 
-The search algorithm will find valid sequence of moves in order to reach  
+  The search algorithm will find valid sequence of moves in order to reach  
 the final state in a "snail solution" fashion.
 
-The solving algorithm time constraint will be that of a reasonable  
+  The solving algorithm time constraint will be that of a reasonable  
 performance:  Taking a few seconds to solve a 3-puzzle is pusshing it,  
 ten seconds is unacceptable.  
 
-The only move you can do in an N-puzzle is to swap the empty cell with one  
+  The only move you can do in an N-puzzle is to swap the empty cell with one  
 of its neighbors excluding cells diagonally placed.  Imagine you're sliding  
 a block with a number on it.  
 
@@ -25,7 +26,7 @@ a block with a number on it.
 
 ### Things to do  
 
-The end goal is to implement the A\* search algorithm (or one of its variants)  
+  The end goal is to implement the A\* search algorithm (or one of its variants)  
 to solve an N-puzzle, with the following constraints:  
 
 - [ ] You have to manage different puzzle sizes (3,4,5,17,etc...).  The higher  
@@ -47,6 +48,26 @@ The __Manhattan-distance__ heuristic is mandatory, the other two are up to you.
 	You are free to use whatever language you want, but keep in mind that some  
 	languages are more time and space-efficient than others, so your choice in languagaes  
 	may influence the performances of your program.  
+
+###  Further explanation on A\*
+	
+  A\* is an informed search algorithm or a BFS.  It is formulated in terms of  
+weighted graphs: starting from a specific node of a graph, it aims to find  
+to the give goal node having the smallest cost (least distance travelled, 
+shortest time, etc.).  Maintained by a tree of paths originating at the start  
+node and extending those paths one edge at a time until its termination criterion  
+is satisfied.  
+
+  A\* selects the path that minimizes  ```f(n) = g(n) + h(n)```  
+```g(n)``` is the cost of the path from the start node to ```n```  
+```h(n)``` is a heuristic function that estimates the cost of the cheapest path  
+from ```n``` to the goal. A* terminates when the path it chooses to extend is a   
+path from start to goal or if there are no paths eligible to be extended.  The  
+heuristic function is problem-specific.  if the heuristic function is ```admissible```  
+, meaning that it never overestimates the actual cost to get to the goal.  A*  
+is __guaranteed__ to return a least-cost path from start to goal.   
+	
+
 
 ### Author  
 
